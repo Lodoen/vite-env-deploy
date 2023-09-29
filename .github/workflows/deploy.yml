@@ -1,4 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Workflow for deploying Vite project with environment variables to GitHub Pages
 name: Deploy
 
 on:
@@ -28,6 +28,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
+      # Environment secrets
       VITE_HIDDEN_SECRET: ${{ secrets.VITE_HIDDEN_SECRET }}
     steps:
       - name: Checkout
