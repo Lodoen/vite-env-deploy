@@ -1,1 +1,3 @@
-# vite-env-deploy
+# Vite and env deploy
+
+## Using github pages
